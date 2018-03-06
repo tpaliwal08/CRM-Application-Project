@@ -1,0 +1,75 @@
+@CHARSET "ISO-8859-1";
+
+#menu, #menu ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+#menu li {
+	float:left;
+	position:relative;
+	line-height: 4.5em;
+	width: 10em;
+	color:#CCCCCC
+}
+
+
+#menu li ul {
+	position:absolute;
+	margin-top:-1em;
+	margin-left:.5em;
+	display:none;
+}
+#menu ul li ul {
+	margin-top:-3em;
+	margin-left:7em;
+}
+
+#menu a {
+	display:block;
+	border-right:1px solid #fff;
+	background:#000033;
+	color: #FFFFFF;
+	text-decoration:none;
+	padding:0 10px;
+}
+#menu a:hover {
+	background-color:#22c0d2;
+	color:#FFFFFF;
+}
+#menu ul {
+	border-top:1px solid #fff;
+}
+#menu ul a {
+	border-right:none;
+	border-right:1px solid #fff;
+	border-bottom:1px solid #fff;
+	border-left:1px solid #fff;
+	background:#000033;
+}
+
+/* SHOW SUBMENU 1 */
+#menu li:hover ul, #menu li.over ul {
+	display:block;
+}
+#menu li:hover ul ul, #menu li.over ul ul {
+	display:none;
+}
+/* SHOW SUBMENU 2 */
+#menu ul li:hover ul, #menu ul li.over ul {
+	display:block;
+}
+/*Header*/
+@CHARSET "ISO-8859-1";
+body {
+    background-color: lightyellow;
+}
+
+h1 {
+    color: white;
+    background:#000033;
+    title: CRM Application;
+    height:100px;
+}
+
+
